@@ -21,8 +21,6 @@ def get_test():
     # return testcase
     testcase = unittest.TestSuite()
     testcase.addTests(discover)
-    runner = unittest.TextTestRunner(verbosity=1)
-    runner.run(testcase)
     return testcase
 
 def html_report(report_path=os.path.join(os.path.dirname(os.path.dirname(__file__)),'report')):
